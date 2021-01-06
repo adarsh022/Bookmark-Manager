@@ -1,0 +1,21 @@
+body{
+  display: block;
+}
+
+header{
+  padding: 20px;
+}
+
+img{
+  float: left;
+}
+
+#tags{
+  margin: 0 20px;
+}
+
+#tags a{
+  text-transform: uppercase;
+  float: right;
+  padding-left: 40px;
+}
