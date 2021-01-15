@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-
 *{
   box-sizing: border-box;
   padding: 0;
@@ -55,6 +54,7 @@ header{
 #nav_links ul li a{
   text-decoration: none;
   color: black;
+  font-size: 1.2em;
   transition: all 0.3s ease 0s;
 }
 
@@ -63,12 +63,13 @@ header{
 }
 
 #nav_links button{
+  margin: 0px 30px;
   text-transform: uppercase;
   padding: 10px 30px;
   cursor: pointer;
   border-radius: 6px;
   color: #ffffff;
-  font-weight: bold;
+  font-size: 1.2em;
   border: 2px solid #fb5956;
   box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.2);
   background-color: #fb5956;
@@ -85,6 +86,7 @@ header{
 #intro{
   display:flex;
   padding: 60px 0;
+  align-items: center;
 }
 
 #intro ul li{
@@ -96,15 +98,15 @@ header{
   font-family: 'Roboto', sans-serif;
   color: #262b48;
   text-transform: capitalize;
-  font-size: 2em;
+  font-size: 3em;
   font-weight: bold;
-  padding: 30px 30px 0px 0px;
 }
 
 #intro ul li:nth-child(2){
   text-transform: full-size-kana;
   font-family: 'Roboto', sans-serif;
   color: #8f9095;
+  font-size: 1.3em;
   padding: 20px 0;
 }
 #intro button{
@@ -113,7 +115,6 @@ header{
   border-radius: 6px;
   color: #ffffff;
   font-weight: bold;
-  
   box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.2);
   background-color: #5266dc;
   transition: all 0.3s ease 0s;
