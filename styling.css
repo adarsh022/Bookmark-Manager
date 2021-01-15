@@ -1,21 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+
 body{
-  display: block;
+  padding: 2% 9%;
 }
 
 header{
-  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-img{
-  float: left;
+#logo{
+  cursor: pointer;
 }
 
-#tags{
-  margin: 0 20px;
+#nav_links{
+  list-style: none;
+  padding: 0 20px;
+  font-family: 'Open Sans', sans-serif;
 }
 
-#tags a{
+
+#nav_links li:nth-child(4){
+  cursor: pointer;
+  border-radius: 6px;
+  box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: #fb5956;
+  transition: all 0.3s ease 0s;
+}
+
+#nav_links li:nth-child(4):hover{
+  background-color: #ffffff;
+  border: 2px solid #fb5956;
+  box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.308);
+}
+
+#nav_links li{
+  display: inline-block;
+  padding: 10px 30px;
+}
+
+#nav_links ul{
+  width: auto;
+  width: 100%;
+}
+#nav_links ul li{
+  display: float;
+  justify-content: space-evenly;
   text-transform: uppercase;
-  float: right;
-  padding-left: 40px;
+  align-items: center;
 }
