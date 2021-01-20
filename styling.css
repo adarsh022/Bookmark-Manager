@@ -39,8 +39,16 @@ header{
 }
 
 #nav_links ul{
+  /* display: none; */
+            /* use this for mobile responsive hamburger menu */
   width: auto;
   width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  #nav_links ul{
+    display: none;
+  }
 }
 
 #nav_links ul li{
@@ -62,7 +70,7 @@ header{
   color: #fb5956;
 }
 
-#nav_links button{
+.login{
   margin: 0px 30px;
   text-transform: uppercase;
   padding: 10px 30px;
@@ -77,21 +85,18 @@ header{
   margin-right: 40px;
 }
 
-#nav_links button:hover{
+.login:hover{
   background-color: #ffffff;
   color: #fb5956;
   box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.308);
 }
 
-/* ///// */
+            /* //adding_hamburger_menu// */
 .menu-btn {
-  display: block;
-  left: 50%;
-  margin: 1em;
+  display: none;
   position: absolute;
-  top: 50%;
-  width: 36px;
-  transform: translate(-50%,-50%);  
+  width: 35px;
+  transform: translate(-50%,-50%);
 }
 
 .menu-btn:before, .menu-btn:after {
@@ -102,17 +107,23 @@ header{
   transition: all 200ms ease-in-out;
 }
 .menu-btn:before {
-  box-shadow: 0 10px 0 #fff;
+  box-shadow: 0 10px 0 #292b44;
   margin-bottom: 16px;
 }
 .menu-btn:hover:before {
-  box-shadow: 0 0 0 #fff;
+  box-shadow: 0 0 0 #292b44;
   transform: translateY(10px) rotate(45deg);
 }
 .menu-btn:hover:after{
   transform: translateY(-10px) rotate(-45deg);
 }
-/* ///// */
+            /* //// */
+
+@media screen and (max-width: 600px) {
+  .menu-btn{
+    display: block;
+  }
+}
 
 #intro{
   display:flex;
