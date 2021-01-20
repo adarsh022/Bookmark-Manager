@@ -83,6 +83,37 @@ header{
   box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.308);
 }
 
+/* ///// */
+.menu-btn {
+  display: block;
+  left: 50%;
+  margin: 1em;
+  position: absolute;
+  top: 50%;
+  width: 36px;
+  transform: translate(-50%,-50%);  
+}
+
+.menu-btn:before, .menu-btn:after {
+  background-color: #292b44;
+  content: '';
+  display: block;
+  height: 4px;
+  transition: all 200ms ease-in-out;
+}
+.menu-btn:before {
+  box-shadow: 0 10px 0 #fff;
+  margin-bottom: 16px;
+}
+.menu-btn:hover:before {
+  box-shadow: 0 0 0 #fff;
+  transform: translateY(10px) rotate(45deg);
+}
+.menu-btn:hover:after{
+  transform: translateY(-10px) rotate(-45deg);
+}
+/* ///// */
+
 #intro{
   display:flex;
   padding: 60px 0;
