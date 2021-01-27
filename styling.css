@@ -14,8 +14,7 @@ header{
 }
 
 header img{
-  width: auto;
-  height: auto;
+  cursor: pointer;
 }
 
 header li{
@@ -67,4 +66,34 @@ header ul li:hover:nth-child(4){
 nav{
   display: none;
 }
+
+@media only screen and (max-width: 1000px) {
+  header ul{
+    display: none;
+  }
+
+  nav{
+    display: block;
+  }
+
+  nav ul{
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+    background-color: #2f354fe7;
+    width: 100%;
+    height: 75%;
+  }
+
+  nav ul li{
+    display: block;
+  }
+}
+
+nav img{
+  cursor: pointer;
+}
+
 /* ///--END--hamburger menu--END--/// */
