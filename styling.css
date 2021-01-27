@@ -1,185 +1,70 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
-*{
-  box-sizing: border-box;
+.{
+  display: block;
   padding: 0;
-  border: 0;
   margin: 0;
-}
-
-body{
-  padding: 2% 9%;
+  border: 0;
 }
 
 header{
+  padding: 2% 8%;
   display: flex;
-  justify-content: space-between;
+  justify-content:space-between;
   align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-#logo{
-  cursor: pointer;
+header img{
+  width: auto;
+  height: auto;
 }
 
-#nav_links{
-  display: flex;
-  justify-content:space-around;
-  list-style: none;
-  color: #262b48;
-  padding: 0 20px;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 15px;
-  font-weight: bold;
-}
-
-#nav_links li{
+header li{
   display: inline-block;
   padding: 10px 30px;
 }
 
-#nav_links ul{
-  /* display: none; */
-            /* use this for mobile responsive hamburger menu */
+header ul{
   width: auto;
-  width: 100%;
 }
 
-@media screen and (max-width: 600px) {
-  #nav_links ul{
-    display: none;
-  }
-}
-
-#nav_links ul li{
-  display: float;
-  justify-content: space-evenly;
+header ul li{
   text-transform: uppercase;
   align-items: center;
   color: black;
 }
 
-#nav_links ul li a{
+header ul li a{
   text-decoration: none;
   color: black;
   font-size: 1.2em;
   transition: all 0.3s ease 0s;
 }
 
-#nav_links ul li a:hover{
+header ul li a:hover{
   color: #fb5956;
 }
 
-.login{
-  margin: 0px 30px;
-  text-transform: uppercase;
+header ul li:nth-child(4){
+  margin-left: 30px;
   padding: 10px 30px;
-  cursor: pointer;
-  border-radius: 6px;
-  color: #ffffff;
-  font-size: 1.2em;
-  border: 2px solid #fb5956;
-  box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.2);
-  background-color: #fb5956;
+  background-color: #fb5859;
+  border-radius: 5px;
+  border: 2px solid #ffffff;
+  
+}
+
+header ul li a:nth-child(4){
+ color: #ffffff;
+}
+
+header ul li:hover:nth-child(4){
+  border: 2px solid #fb5859;
+  background-color: #fff;
   transition: all 0.3s ease 0s;
-  margin-right: 40px;
 }
 
-.login:hover{
-  background-color: #ffffff;
-  color: #fb5956;
-  box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.308);
-}
-
-            /* //adding_hamburger_menu// */
-.menu-btn {
+/* ///--START--hamburger menu--START--/// */
+nav{
   display: none;
-  position: absolute;
-  width: 35px;
-  transform: translate(-50%,-50%);
 }
-
-.menu-btn:before, .menu-btn:after {
-  background-color: #292b44;
-  content: '';
-  display: block;
-  height: 4px;
-  transition: all 200ms ease-in-out;
-}
-.menu-btn:before {
-  box-shadow: 0 10px 0 #292b44;
-  margin-bottom: 16px;
-}
-.menu-btn:hover:before {
-  box-shadow: 0 0 0 #292b44;
-  transform: translateY(10px) rotate(45deg);
-}
-.menu-btn:hover:after{
-  transform: translateY(-10px) rotate(-45deg);
-}
-            /* //// */
-
-@media screen and (max-width: 600px) {
-  .menu-btn{
-    display: block;
-  }
-}
-
-#intro{
-  display:flex;
-  padding: 60px 0;
-  align-items: center;
-}
-
-#intro ul li{
-  display: block;
-  margin-right: 50px;
-}
-
-#intro ul li:nth-child(1){
-  font-family: 'Roboto', sans-serif;
-  color: #262b48;
-  text-transform: capitalize;
-  font-size: 3em;
-  font-weight: bold;
-}
-
-#intro ul li:nth-child(2){
-  text-transform: full-size-kana;
-  font-family: 'Roboto', sans-serif;
-  color: #8f9095;
-  font-size: 1.3em;
-  padding: 20px 0;
-}
-#intro button{
-  padding: 10px 30px;
-  cursor: pointer;
-  border-radius: 6px;
-  color: #ffffff;
-  font-weight: bold;
-  box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.2);
-  background-color: #5266dc;
-  transition: all 0.3s ease 0s;
-}
-
-#intro button:nth-child(1){
-  border: 2px solid #5266dc;
-}
-
-#intro button:nth-child(2){
-  background-color: #f7f7f8;
-  border: 2px solid #f7f7f8;
-  color: #5f5e6c;
-}
-
-#intro button:nth-child(1):hover{
-  color: #5f65a3;
-  border: 2px solid #606aa5;
-  background-color: #ffffff;
-}
-
-#intro button:nth-child(2):hover{
-  background-color: #ffffff;
-  color: #5f5e6c;
-  border: 2px solid #5f616d;
-}
+/* ///--END--hamburger menu--END--/// */
